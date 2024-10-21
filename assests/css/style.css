@@ -7,12 +7,8 @@
 }
 
 
-html {
-   color: #282d31; 
-}
-p {
-    font-family: "Roboto Flex", sans-serif;
-}
+
+/* General styling */
 body {
   background-color: #fff;
   display: flex;
@@ -20,12 +16,24 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  color: #282d31; 
   overflow: scroll;
   scroll-behavior: smooth;
+
 }
 
+
+main {
+ background-color: lightblue; 
+  /* element to take up space and push footer down */ 
+  flex: 1 0 auto;
+}
+
+
+
+
 .title  {
-    padding: 5rem 1rem;
+    padding: 1rem 1rem;
     max-width: none;
     margin-bottom: 1rem;
     font-size: 2.5rem;
