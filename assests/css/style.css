@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
 /* Asterisk wildcard selector to override default styles added by the browser */
 
 * {
@@ -29,7 +33,10 @@ main {
   flex: 1 0 auto;
 }
 
-
+/* h1 heading */
+h1 {
+    margin-top: 100px;
+}
 
 /* Solo Hub Title */
 .title  {
@@ -39,6 +46,8 @@ main {
     font-size: 2.5rem;
     text-decoration: none;
     text-align: center;
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
 
 }
 
