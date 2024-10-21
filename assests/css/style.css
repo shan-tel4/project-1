@@ -28,8 +28,9 @@ body {
     padding: 5rem 1rem;
     max-width: none;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-decoration: none;
+    text-align: center;
 
 }
 
@@ -37,15 +38,23 @@ body {
 .title a {
 text-decoration: none;
 color: rgb(60, 0, 255);
+font-weight: 600;
+font-family: ;
 }
 
 
 .nav-bar li {
     display: inline-block;
   margin-left: 50px;
+  list-style-type: none;
+ 
 
 }
 
+
+.nav-bar a {
+    margin-left: 50px;
+}
 /* Footer styles */
 footer {
     text-align: center;
