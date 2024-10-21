@@ -1,0 +1,20 @@
+/* Asterisk wildcard selector to override default styles added by the browser */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  bottom: 20px;
+}
