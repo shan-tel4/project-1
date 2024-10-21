@@ -2,6 +2,34 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Paytone One", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
 }
 
 
+body {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.792);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+/* Unhide footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    visibility: hidden;
+}
