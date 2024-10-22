@@ -81,6 +81,7 @@ nav {
  width: 100%;   
 }
 
+/* text box styling */
 .text-box {
    width: 90%;
    color: #fff;
@@ -91,12 +92,15 @@ nav {
    text-align: center;
 }
 
+/* text box h1 styling */
 .text-box h1 {
   font-size: 62px;
   font-family: "Poppins", sans-serif;
   font-style: italic;
 }
 
+
+/* text box p styling*/
 .text-box p {
   margin: 10px 0 40px;
   font-size: 14px;
@@ -104,6 +108,8 @@ nav {
 
 }
 
+
+/* hero button styling */
 .hero-button {
     display: inline-block;
     text-decoration: none;
@@ -114,8 +120,11 @@ nav {
     background: transparent;
     position: relative;
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
 }
 
+
+/* hero button hover styling */
 .hero-button:hover {
    border: 1px solid lightblue; /*place holder color */
    background: lightskyblue; /*place holder color */
@@ -127,7 +136,7 @@ nav .fa { /* Hide icon for larger screen */
     display: none;
 }
 
-/* Media query for mobile phones and large screens*/
+/* Media query for mobile phones and large screens */
 @media only screen and (min-width: 420px)  and (max-width: 768px) {
 
 
