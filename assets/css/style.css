@@ -112,3 +112,9 @@ nav {
     position: relative;
     cursor: pointer;
 }
+
+.hero-button:hover {
+   border: 1px solid lightblue;
+   background: lightskyblue;
+   transition: 0.8s;
+}
