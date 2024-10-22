@@ -7,13 +7,13 @@
 
 
 /* wildcard selector */
-/* General styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Genral styling to the page */
 body {
     font-family: Arial, sans-serif;
 }
@@ -32,6 +32,8 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
 }
 
+
+/* logo styles */
 .logo {
     font-size: 2em;
     color: #fff;
@@ -39,24 +41,22 @@ header {
     text-decoration: none;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    font-size: 1.2em;
-    text-transform: uppercase;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
 
 /* Banner styles */
 .banner {
     margin-top: 60px; /* Push the banner down to avoid being hidden under the fixed header */
 }
+
+
+.banner {
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    background-image: url("https://media.istockphoto.com/id/1362645810/photo/colorful-sunset-sailboat-ocean-inspirational-landscape.jpg?s=612x612&w=0&k=20&c=0dJWWXo4NzFocbJnKVxhME5OUzCjJqfiE0iMpzH0n6k=");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .banner img {
     width: 100%;
@@ -71,23 +71,34 @@ section {
     z-index: 1; /* Lower than header to keep content behind */
 }
 
+
+
+/* Nav styles */
 nav ul li a {
     color: #fff;
 }
 
 nav ul li a:hover {
-  color: #4035a9;
+  color: #0b0a0b;
   transition: color 0.4s ease;
 }
 
-.banner {
-    height: 100vh; /* Full viewport height */
-    width: 100%;
-    background-image: url("https://media.istockphoto.com/id/1362645810/photo/colorful-sunset-sailboat-ocean-inspirational-landscape.jpg?s=612x612&w=0&k=20&c=0dJWWXo4NzFocbJnKVxhME5OUzCjJqfiE0iMpzH0n6k=");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2em;
+    text-transform: uppercase;
 }
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
 
 
 /* button */
