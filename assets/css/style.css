@@ -132,8 +132,12 @@ nav {
 }
 
 
-nav .fa { /* Hide icon for larger screen */
-    display: none;
+nav .fa-solid.fa-bars {
+   color: #fff;
+}
+
+nav .fa-solid.fa-xmark {
+    color: #fff;
 }
 
 /* Media query for mobile phones and large screens */
@@ -157,7 +161,7 @@ nav .fa { /* Hide icon for larger screen */
     z-index: 2;
   }
 
-  nav .fa{
+  nav .fa-solid.fa-bars{
     display: block;
     color: #fff;
     margin: 10px;
@@ -165,3 +169,4 @@ nav .fa { /* Hide icon for larger screen */
 
   }
 }
+
