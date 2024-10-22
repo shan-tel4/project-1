@@ -172,6 +172,12 @@ nav .fa-solid.fa-xmark {
     
     }
 
+    nav .fa-solid.fa-bars {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        margin-left: 10px
+     }
     .nav-bar ul {
      padding: 30px;
 
