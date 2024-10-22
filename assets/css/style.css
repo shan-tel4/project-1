@@ -133,40 +133,42 @@ nav {
 
 
 nav .fa-solid.fa-bars {
-   color: #fff;
+   display: none;
 }
 
 nav .fa-solid.fa-xmark {
-    color: #fff;
+    display: none;
 }
 
-/* Media query for mobile phones and large screens */
-@media only screen and (min-width: 420px)  and (max-width: 768px) {
-
-
-.text-box h1 {
-   font-size: 20px;
+/* Media query for small screens (phones, up to 480px wide) */
+@media only screen and (max-width: 480px) {
+  
+    .text-box h1 {
+      font-size: 20px;
+    }
+  
+    .nav-bar ul li {
+      display: block;
+    }
+  
+    .nav-bar {
+      position: absolute;
+      background: #1D1615; /* Placeholder color */
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: 0;
+      text-align: left;
+      z-index: 2;
+    }
+  
+    /* Show menu icon only on mobile screens */
+     nav .fa-solid.fa-xmark {
+      color: #fff;
+      display: block;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
   }
-  .nav-bar ul li {
-    display: block;
-  }
-  .nav-bar {
-    position: absolute;
-    background: #1D1615; /*place holder color */
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: 0;
-    text-align: left;
-    z-index: 2;
-  }
-
-  nav .fa-solid.fa-bars{
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-
-  }
-}
 
