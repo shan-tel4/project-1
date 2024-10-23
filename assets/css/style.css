@@ -50,7 +50,7 @@
 
 #social-networks a:hover {
     color: lightblue; /* Change color on hover */
-    transition: ease-in 0.3s;
+    transition: ease-in 0.1s;
 }
 
 /* Rest of your existing styles */
@@ -199,5 +199,19 @@ nav .fa-solid.fa-xmark {
     }
     .nav-bar ul {
         padding: 30px;
+   
+      }
+
+      #social-networks {
+      display: none;
+      }
+
+
     }
-}
+
+
+
+
+
+
+
