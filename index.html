@@ -29,7 +29,7 @@
              <!--logo-->
             <a href="index.html" class="logo">Solo Hub</a> 
             
-            <div class="nav-bar" navBar>
+            <div class="nav-bar" id="navBar"> <!-- Changed to id="navBar" -->
                 <i class="fa-solid fa-xmark" onclick="hideMenu()"></i > <!--close mark icon-->
                 <ul>
                      <!--nav bar-->
@@ -48,24 +48,23 @@
             <h1>Your Solo Adventure Awaits...</h1>
              <!--paragraph-->
             <p class="p1">Welcome to Solo Hub, your go-to resource for unforgettable solo adventures! Whether you're a seasoned traveler or planning your first trip on your own, we're here to guide you every step of the way. Explore new cultures, discover breathtaking landscapes, and enjoy the freedom of traveling at your own pace. At Solo Hub, we believe solo travel is empowering, and we’re excited to help you make the most of every journey. Dive in, explore our tips, and start planning your next adventure today!</p>
-             <!--read more button-->
+             <!--discover more button-->
             <a href="about.html" class="hero-button">discover more</a>
         </div>
     </section>
+   
+   
+    <!--javascript added to hide and show menu-->
    <script>
+        var navBar = document.getElementById("navBar"); // Now correctly selects the element by id
+        function showMenu() {
+            navBar.style.right = "0";
+        }
 
-
-var navBar = document.getElementById("navBar");
-
-function showMenu() {
-    navBar.style.right = "0";
-}
-
-function hideMenu() {
-    navBar.style.right = "-200px";
-}
-  
-</script>
+        function hideMenu() {
+            navBar.style.right = "-200px";
+        }
+   </script>
 </body>
 </html>
-   
+
