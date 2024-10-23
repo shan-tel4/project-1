@@ -29,8 +29,8 @@
              <!--logo-->
             <a href="index.html" class="logo">Solo Hub</a> 
             
-            <div class="nav-bar">
-                <i class="fa-solid fa-xmark"></i> <!--close mark-->
+            <div class="nav-bar" navBar>
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i > <!--close mark icon-->
                 <ul>
                      <!--nav bar-->
                     <li><a href="#HOME">HOME</a></li>
@@ -39,7 +39,8 @@
                     <li><a href="#CONTACT">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars"></i> <!--menu icon-->
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!--menu icon-->
+        
         </nav>
          <!--text box class -->
         <div class="text-box">
@@ -51,7 +52,20 @@
             <a href="about.html" class="hero-button">discover more</a>
         </div>
     </section>
+   <script>
 
+
+var navBar = document.getElementById("navBar");
+
+function showMenu() {
+    navBar.style.right = "0";
+}
+
+function hideMenu() {
+    navBar.style.right = "-200px";
+}
+  
+</script>
 </body>
 </html>
    

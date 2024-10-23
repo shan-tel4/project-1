@@ -144,7 +144,7 @@ nav .fa-solid.fa-xmark {
 @media only screen and (max-width: 480px) {
   
     .text-box h1 {
-      font-size: 20px;
+      font-size: 24px;
     }
   
     .nav-bar ul li {
@@ -175,8 +175,9 @@ nav .fa-solid.fa-xmark {
     nav .fa-solid.fa-bars {
         display: block;
         color: #fff;
-        font-size: 22px;
+        font-size: 25px;
         margin-left: 10px
+        cursor: pointer;
      }
     .nav-bar ul {
      padding: 30px;
