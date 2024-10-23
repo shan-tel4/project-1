@@ -50,6 +50,7 @@
 
 #social-networks a:hover {
     color: lightblue; /* Change color on hover */
+    transition: ease-in 0.3s;
 }
 
 /* Rest of your existing styles */
