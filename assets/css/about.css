@@ -1,7 +1,35 @@
-
+/* Wild Card selectoe  */
 * {
     margin: 0;
     padding: 0;
-    box-shadow: none;
+    box-sizing: border-box;
+}
+
+/*  genral styling */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+ 
+
+/*  Header */
+header {
+    background-color: salmon;
+    padding: 20px 30px;
+}
+
+/* Main */
+main {
+    flex: 1 0 auto;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Footer */
+footer {
+    background-color: orange;
+    padding: 20px 30px;
 }
 

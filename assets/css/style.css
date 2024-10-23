@@ -9,7 +9,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-shadow: none;
+    box-sizing: border-box;
 }
 
 /* Header with background image */
@@ -197,6 +197,7 @@ nav .fa-solid.fa-xmark {
       color: #fff;
       font-size: 25px;
     }
+
     .nav-bar ul {
         padding: 30px;
    
