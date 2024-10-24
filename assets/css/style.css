@@ -163,7 +163,7 @@ nav .fa-solid.fa-xmark {
 }
 
 /* Media Query for mobile devices */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 430px) {
     .text-box h1 {
         font-size: 24px;
     }

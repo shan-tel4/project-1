@@ -27,7 +27,9 @@ body {
 header {
  background-color: #20211A;
  color: #fff;
-    padding: 20px 30px;
+ position: fixed;
+ width: 100%;
+padding: 3px;
 }
 
 /*Logo styles */
@@ -37,10 +39,14 @@ header {
     font-family: 'Pacifico', cursive;
     text-decoration: none;
     font-size: 2.5em;
+    margin-top: 20px;
 }
 
+/* Nav bar styling */
+.nav-bar ul li a {
+    color: #fff;
+}
 
-/* Navbar styling */
 .nav-bar {
     flex: 1;
     text-align: right;
@@ -77,8 +83,6 @@ header {
 .nav-bar ul li a:hover::after {
     width: 100%;
 }
-
-
 
 
 
