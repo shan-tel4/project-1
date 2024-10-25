@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+ 
+}
+
+.first_col {
+    background-color: #ffffff; /* White background for the card */
+    height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px; /* Softer shadow */
+    position: relative;
+    width: 550px;
+    left: 155px;
+    top: 171px;
+    border-radius: 20px;
+}
+
+.img-fluid {
+    border-radius: 20px;
+}
+
+/* Row styling with a shade of blue */
+.row-last {
+    width: 60% !important;
+    position: relative !important;
+    left: 350px;
+    top: 50px;
+    height: 200px;
+    padding-bottom: 100px !important;
+    background-color: lightblue; /* Light blue shade */
+    border-radius: 20px;
+}
+
+/* Button primary with blue colors */
+.btn-primary {
+    background-color: lightblue; /* Medium blue */
+    border: lightblue;
+}
+
+.btn-primary:hover {
+    background-color: black; !important; /* Darker blue on hover */
+}
+
+/* Form control styling */
+.form-control {
+    height: 52px;
+    background: #ffffff; /* White input background */
+    font-size: 14px;
+    border-radius: 2px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #3498db; /* Blue border */
+}
+
+.form-control[type=text]:focus {
+    border: 2px solid #2980b9; /* Darker blue focus border */
+}
+
+
+
+
+/* Media queries for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .first_col {
+        position: initial;
+        left: 0 !important;
+    }
+
+    .sec_col {
+        order: 1 !important;
+    }
+
+    .row-last {
+        left: 0 !important;
+        width: 100% !important;
+        height: 500px !important;
+        top: 0 !important;
+    }
+}
