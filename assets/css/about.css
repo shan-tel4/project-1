@@ -5,7 +5,6 @@
 
 
 
-
 /* Wild Card selectoe  */
 * {
     margin: 0;
@@ -38,7 +37,7 @@ background-size: contain;
  color: #fff;
  position: fixed;
  width: 100%;
- margin-bottom: 20px;
+
 }
 
 /*Logo styles */
@@ -48,7 +47,7 @@ background-size: contain;
     font-family: 'Pacifico', cursive;
     text-decoration: none;
     font-size: 2.5em;
-    margin-top: 20px;
+
 }
 
 /* Nav bar styling */
@@ -104,15 +103,7 @@ main {
     
 }
 
-h1 {
-    margin-top: 80px;
-    text-align: right;
-    margin-right: 600px;
-    font-style: italic;
-    color: darkblue;
-    opacity: 0.5;
-}
- 
+
 
 
 /* Social Media Icons */
@@ -139,6 +130,16 @@ h1 {
     color: lightblue; /* Change color on hover */
 }
 
+.solo-title {
+    margin-bottom: 60px;
+    opacity: 0.8;
+}
+
+
+
+.hero-image {
+
+}
 
 /* Footer */
 footer {

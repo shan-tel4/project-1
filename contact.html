@@ -1,75 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+       <title>Solo Hub</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+       <!-- meta tags to optimise SEO -->
+<meta name="description" content="Solo Hub. A website for people who enjoy solo travelling or first-time solo travellers">
+<meta name="keywords" content="travel, solo trips, trips, holiday, destination, vacation, international, global, countries, worldwide">
 
-    <title>Contact Us | Solo Hub</title>
-    <link rel="stylesheet" href="assets/css/contact.css">
- 
+<!-- Figure out how to have each page tab to reflect their title-->
+<title>About | Solo Hub</title>
+
+       <!-- Linking to the stylesheet -->
+       <link rel="stylesheet" href="assets/css/about.css">
+       <script src="https://kit.fontawesome.com/db4ee61347.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div class="bg-background"></div>
-    <div class="container py-5">
-        <div class="row py-5 g-3">
 
-            <div class="col-md-6 first_col ">
-                <h1 class="text-center mt-3">Contact Us</h1>
-                <form class="p-4 mt-5">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Enter your Name</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email ID</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Enter your massage</label>
-                        <textarea  type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <button class="btn btn-primary">Send Now</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-6 sec_col">
-                <img src="https://capital-placement.com/wp-content/uploads/2021/07/The-benefits-of-travelling.jpg"
-                class="img-fluid">
-              
-            </div>
-        </div>
-        <div class="row-last">
-            <div class="row row-cols-1 row-cols-md-3  p-3 text-white">
-                <div class="col">
-                    <h4>CALL Us</h4>
-                    <p>+447889978654 <br> +02078208876 </p>
-                </div>
-                <div class="col">
-                    <h4>Join Our Community</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, doloribus!</p>
-                </div>
-                <div class="col">
-                    <h4>Email</h4>
-                    <p>solo.hub.support@gmail.com <br> solo.hub.sales@gmail.com</p>
-                </div>
-            </div>
-        </div>
+     <!-- Header --> 
+ <header>
+    <nav>
+        <!--logo-->
+       <a href="index.html" class="logo">Solo Hub</a> 
+       <div class="nav-bar" id="navBar"> <!-- Changed to id="navBar" -->
+        <ul>
+             <!--nav bar-->
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="#TRAVEL TIPS">TRAVEL TIPS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
     </div>
 
-    <!--  Bootstrap Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+ </header>
 
-       
+      <!-- Main -->
+ <main>
+
+ </main> 
+<div class="container">
+    <div class="contact-box">
+        <div class="left"></div>
+        <div class="right"> 
+            <h3>Contact Us</h3>
+            <input type="text" class="field" placeholder="Your Name">
+            <input type="email" class="field" placeholder="Your Email">
+            <input type="text" class="field" placeholder="Your Phone Number">
+            <textarea class="field" placeholder="Message"></textarea>
+        </div>
+    </div>
+</div>
+
+
+
+   
+
+
+
+     
+ <!-- footer --> 
+ <footer>
+    <div class="icon-container">
+        <ul id="social-networks">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our X  page (opens in a new tab)">
+                    <i class="fa-brands fa-square-x-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+    </div>
+
+
+ </footer>
+
+
+
+
+
 </body>
-
 </html>
