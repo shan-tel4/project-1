@@ -1,0 +1,119 @@
+/* Google font import links */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* Reset and base styling */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+/* Header */
+header {
+    background-color: #0e0f0c;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure logo is on the left and nav-bar on the right */
+    width: 100%;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 2.5em;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+}
+
+/* Nav bar styling */
+.nav-bar ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-bar ul li a:hover {
+    color: lightblue;
+}
+
+.nav-bar ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: width 0.5s;
+}
+
+.nav-bar ul li a:hover::after {
+    width: 100%;
+}
+
+
+
+/* Social Media Icons */
+#social-networks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+#social-networks li {
+    display: inline-block;
+}
+#social-networks a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+#social-networks a:hover {
+    color: lightblue;
+}
+
+/* Footer */
+footer {
+    background-color: #20211A;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.icon-container ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+}
