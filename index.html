@@ -35,7 +35,7 @@
                      <!--nav bar-->
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="#TRAVEL TIPS">DESTINATIONS</a></li>
+                    <li><a href="destinations.html">DESTINATIONS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
@@ -45,7 +45,7 @@
          <!--text box class -->
         <div class="text-box">
              <!--h1 heading-->
-            <h1>Your Solo Adventure Awaits...</h1>
+            <h1 class="headline">Your Solo Adventure Awaits...</h1>
              <!--paragraph-->
             <p class="p1">Welcome to Solo Hub, your go-to resource for unforgettable solo adventures! Whether you're a seasoned traveler or planning your first trip on your own, we're here to guide you every step of the way. Explore new cultures, discover breathtaking landscapes, and enjoy the freedom of traveling at your own pace. At Solo Hub, we believe solo travel is empowering, and we’re excited to help you make the most of every journey. Dive in, explore our tips, and start planning your next adventure today!</p>
              <!--discover more button-->
@@ -79,19 +79,19 @@
             </li>
         </ul>
     </div>
-
+  
+    <!--Javascript for toggle menu-->
    
-    <!--javascript added to hide and show menu-->
-   <script>
-        var navBar = document.getElementById("navBar"); // Now correctly selects the element by id
-        function showMenu() {
-            navBar.style.right = "0";
-        }
-
-        function hideMenu() {
-            navBar.style.right = "-200px";
-        }
+  <script>
+   var navBar = document.getElementById("navBar");
+   function showMenu() {
+    navBar.style.right = "0";
+   }
+   function hideMenu() {
+    navBar.style.right = "-200px"
+   }
    </script>
+  
 </body>
 </html>
 
