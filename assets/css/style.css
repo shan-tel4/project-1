@@ -67,7 +67,7 @@ nav {
 
 /* Logo Styling */
 .logo {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #fff;
     font-family: 'Pacifico', cursive;
     text-decoration: none;
@@ -200,29 +200,7 @@ nav .fa-bars, nav .fa-xmark {
         cursor: pointer;
     }
 
-    @media (min-width: 430px) and (max-width: 1000px) {
-        .text-box h1 {
-            font-size: 20px;
-        }
-        .nav-bar ul {
-            display: flex;
-            flex-direction: column; /* Stack items vertically */
-            gap: 10px; /* Add some space between items */
-        }
-        .nav-bar ul li {
-            display: block; /* Remove inline-block to stack items */
-            text-align: left; /* Align text to the left */
-        }
-        .nav-bar {
-            position: absolute;
-            background: #1e73be;
-            height: 100vh;
-            width: 200px;
-            top: 0;
-            right: 0;
-            text-align: left;
-            z-index: 2;
-        }
+
       @media (min-width: 430px) and (max-width: 1000px) {
   p {
         font-size: 2rem;
@@ -266,4 +244,4 @@ nav .fa-bars, nav .fa-xmark {
  
 }
 }
-}
+

@@ -6,30 +6,36 @@
     <title>About | Solo Hub</title>
 
     <!-- Meta tags for SEO -->
-    <meta name="description" content="Solo Hub. A website for people who enjoy solo travelling or first-time solo travellers">
+    <meta name="description" content="Solo Hub: A website for people who enjoy solo travelling or are first-time solo travellers.">
     <meta name="keywords" content="travel, solo trips, trips, holiday, destination, vacation, international, global, countries, worldwide">
 
     <!-- Linking to the stylesheet -->
     <link rel="stylesheet" href="assets/css/about.css">
+   
+
+    <!-- Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/db4ee61347.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
-    <!-- Header -->
+<body>
+    <!-- Header Section -->
     <header>
         <nav>
+            <!-- Logo -->
             <a href="index.html" class="logo">Solo Hub</a>
-            <div class="nav-bar" id="navBar"> <!-- Changed to id="navBar" -->
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i > <!--close mark icon-->
+
+            <!-- Navigation Bar -->
+            <div class="nav-bar" id="navBar">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> <!-- Close Icon -->
                 <ul>
-                     <!--nav bar-->
+                    <!-- Navigation Links -->
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="destinations.html">DESTINATIONS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!--menu icon-->
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!-- Menu Icon -->
         </nav>
     </header>
 
@@ -66,6 +72,7 @@
         </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
         <div class="icon-container">
             <ul id="social-networks">
@@ -80,16 +87,17 @@
             </ul>
         </div>
     </footer>
-     <!--javascript added to hide and show menu-->
-   <script>
-    var navBar = document.getElementById("navBar"); // Now correctly selects the element by id
-    function showMenu() {
-        navBar.style.right = "0";
-    }
 
-    function hideMenu() {
-        navBar.style.right = "-200px";
-    }
-</script>
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navBar = document.getElementById("navBar");
+        function showMenu() {
+            navBar.style.right = "0";
+        }
+        function hideMenu() {
+            navBar.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
+

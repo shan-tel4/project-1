@@ -15,20 +15,26 @@
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header --> 
     <header>
         <nav>
-            <a href="index.html" class="logo">Solo Hub</a>
-            <div class="nav-bar" id="navBar">
+            <!--logo-->
+            <a href="index.html" class="logo">Solo Hub</a> 
+            
+            <div class="nav-bar" id="navBar"> <!-- Changed to id="navBar" -->
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i > <!--close mark icon-->
                 <ul>
+                     <!--nav bar-->
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="destinations.html">DESTINATIONS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!--menu icon-->
         </nav>
     </header>
+
 
     <!-- Main Content -->
     <main>
@@ -59,7 +65,7 @@
                 <p>A paradise known for its beautiful beaches and lush landscapes, Bali offers relaxation and adventure for solo travelers.</p>
             </div>
             <div class="destination-item">
-                <img src="https://media.istockphoto.com/id/1483204178/photo/yellow-typical-tram-in-lisbon-portugal.jpg?s=612x612&w=0&k=20&c=m0X8fJnuO8zF87z43T7hbU6lPIWiKXtMBMBcBUQvWm0="">
+                <img src="https://media.istockphoto.com/id/1483204178/photo/yellow-typical-tram-in-lisbon-portugal.jpg?s=612x612&w=0&k=20&c=m0X8fJnuO8zF87z43T7hbU6lPIWiKXtMBMBcBUQvWm0=">
                 <h2>Lisbon, Portugal</h2>
                 <p>Explore colorful neighborhoods, historic sites, and the stunning coastline. Lisbon is perfect for solo adventurers.</p>
             </div>
@@ -96,6 +102,18 @@
             </ul>
         </div>
     </footer>
+<!--Javascript for toggle menu-->
+   <script>
+    var navBar = document.getElementById("navBar");
+    function showMenu() {
+        navBar.style.right = "0"; /* Shows the nav bar */
+    }
+    function hideMenu() {
+        navBar.style.right = "-70%"; /* Hides the nav bar */
+    }
+    
+   </script>
 
+    
 </body>
 </html>
