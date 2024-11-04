@@ -47,7 +47,6 @@ nav {
     text-decoration: none;
 }
 
-
 .nav-bar {
     display: flex;
     align-items: center;
@@ -69,8 +68,6 @@ nav {
 .nav-bar ul li a:hover {
     color: #ffcb74;
 }
-
-
 
 .nav-bar ul li a::after {
     content: '';
@@ -210,8 +207,9 @@ nav .fa-solid.fa-xmark {
     display: none;
 }
 
-/* Media Query for 430px to 1000px */
-@media (min-width: 430px) and (max-width: 1000px) {
+/* Consolidated Media Query for Responsive Design */
+@media (max-width: 1000px) {
+    /* General adjustments for screens below 1000px */
     nav {
         flex-direction: column; /* Stack items vertically */
         align-items: flex-start; /* Align items to the left */
@@ -244,51 +242,20 @@ nav .fa-solid.fa-xmark {
     .logo {
         font-size: 2em; 
     }
-}
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column; /* Stack items vertically */
-        padding: 10px; /* Add some padding */
+    /* Adjust the gallery for medium screens */
+    @media (max-width: 600px) {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr); /* Two images per row for mobile view */
+            gap: 10px; /* Adjust gap for better spacing */
+        }
     }
 
-    .nav-bar {
-        width: 100%; /* Full width for nav-bar */
-        position: relative; /* Position for dropdown */
-    }
-
-    .nav-bar ul {
-        flex-direction: column; /* Stack menu items vertically */
-        gap: 10px; /* Spacing between items */
-    }
-
-    .nav-bar.active ul {
-        display: flex; /* Show menu items when the nav-bar is active */
-    }
-
-    nav .fa-xmark {
-        display: block; /* Show the close icon when active */
-        cursor: pointer;
-        font-size: 1.5em;
-        color: #fff;
-        align-self: flex-end; /* Align close icon to the right */
-    }
-
-    nav .fa-bars {
-        display: block; /* Show the hamburger icon */
-        font-size: 1.5em;
-        color: #fff;
-        cursor: pointer;
-        align-self: flex-end; /* Align hamburger icon to the right */
-    }
-
-    .logo {
-        font-size: 1.8em; /* Further reduce logo size for mobile */
-        margin-bottom: 10px; /* Add space below logo */
+    /* Adjust the gallery for medium screens */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three images per row for screens between 430px and 1000px */
     }
 }
-
 
 
 

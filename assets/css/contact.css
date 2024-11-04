@@ -270,6 +270,10 @@ nav .fa-bars, nav .fa-xmark {
         cursor: pointer;
     }
 
+    .logo {
+        font-size: 2em;
+    }
+
     .nav-bar ul {
         display: flex;
         flex-direction: column; /* Stack items vertically */
