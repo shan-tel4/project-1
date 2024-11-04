@@ -31,6 +31,7 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+
 /* Navigation */
 nav {
     display: flex;
@@ -41,11 +42,12 @@ nav {
 
 /* Logo styles */
 .logo {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #fff;
     font-family: 'Pacifico', cursive;
     text-decoration: none;
 }
+
 
 .nav-bar {
     display: flex;
@@ -68,6 +70,8 @@ nav {
 .nav-bar ul li a:hover {
     color: #ffcb74;
 }
+
+
 
 .nav-bar ul li a::after {
     content: '';
@@ -108,6 +112,7 @@ nav {
     font-size: 1.8em;
     color: #1e73be;
     margin-top: 30px;
+    text-align: center;
     margin-bottom: 15px;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgba(30, 115, 190, 0.15);
@@ -135,6 +140,8 @@ nav {
     position: relative;
 }
 
+
+
 /* Image Gallery */
 .image-gallery {
     padding: 60px 10%;
@@ -144,6 +151,7 @@ nav {
 .image-gallery h2 {
     font-size: 32px;
     color: #1e73be;
+    text-align: center;
     margin-bottom: 40px;
     text-shadow: 1px 1px #888;
 }
@@ -168,6 +176,11 @@ nav {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     filter: brightness(1);
+}
+
+.fa-solid {
+    color: #1e73be;
+    font-size: 20px;
 }
 
 /* Social Media Icons */
@@ -253,7 +266,7 @@ nav .fa-solid.fa-xmark {
 
     /* Adjust the gallery for medium screens */
     .gallery {
-        grid-template-columns: repeat(3, 1fr); /* Three images per row for screens between 430px and 1000px */
+        grid-template-columns: repeat(1, 1fr); /* Three images per row for screens between 430px and 1000px */
     }
 }
 

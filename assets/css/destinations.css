@@ -31,6 +31,7 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+
 /* Navigation */
 nav {
     display: flex;
@@ -116,7 +117,7 @@ main {
 /* Destination List */
 .destination-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* Set to always display 4 columns */
     gap: 20px;
     padding: 20px;
 }
@@ -208,6 +209,10 @@ nav .fa-bars, nav .fa-xmark {
     .nav-bar ul li {
         display: block; /* Remove inline-block to stack items */
         text-align: left; /* Align text to the left */
+    }
+
+    .destination-list {
+        grid-template-columns: 2fr;
     }
     .nav-bar {
         position: absolute;

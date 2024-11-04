@@ -1,6 +1,7 @@
+
 /* Google font import links */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
 /* Reset and base styling */
 *,
@@ -31,6 +32,7 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+
 /* Navigation */
 nav {
     display: flex;
@@ -41,31 +43,36 @@ nav {
 
 /* Logo styles */
 .logo {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #fff;
     font-family: 'Pacifico', cursive;
     text-decoration: none;
 }
 
-/* Nav bar styling */
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
 .nav-bar ul {
     display: flex;
-    gap: 20px;
     list-style: none;
+    gap: 15px;
 }
 
 .nav-bar ul li a {
     color: #fff;
-    text-decoration: none;
-    font-size: 1em;
     font-weight: 600;
-    transition: color 0.3s;
-    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .nav-bar ul li a:hover {
     color: #ffcb74;
 }
+
+
 
 .nav-bar ul li a::after {
     content: '';
@@ -81,12 +88,15 @@ nav {
     width: 100%;
 }
 
+
+
+
+
 /* Main */
 main {
     flex: 1;
-    margin-top: 100px;
+    margin-top: 60px;
     text-align: center;
-    color: #333;
 }
 
 /* Container styling */
@@ -181,7 +191,7 @@ textarea {
     width: 100%; /* Full width initially */
     max-width: 200px; /* Restrict the maximum width */
     padding: 12px 14px;
-    background: linear-gradient(45deg, #1e73be, #1c4f8e);
+    background: #1e73be;
     color: #fff;
     font-size: 1rem;
     border: none;
@@ -199,8 +209,10 @@ textarea {
 .join {
     font-size: 1.75rem;
     margin-bottom: 30px;
+    padding: 8px;
     color: #1e73be;
 }
+
 
 /* Social Media Icons */
 #social-networks {
@@ -308,6 +320,7 @@ nav .fa-bars, nav .fa-xmark {
         font-size: 1.4rem;
     }
     .join {
+        padding: 20px;
         font-size: 1.5rem;
     }
 }
