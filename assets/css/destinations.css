@@ -193,7 +193,7 @@ nav .fa-bars, nav .fa-xmark {
 /* Media Query for devices with min-width 430px and max-width 1000px */
 @media (min-width: 430px) and (max-width: 1000px) {
     .destination-list {
-        grid-template-columns: repeat(1, 1fr); /* Display 2 items per row */
+        grid-template-columns: repeat(1, 1fr); /* Display 1 item per row */
     }
 
     .destination-header h1 {
@@ -204,17 +204,48 @@ nav .fa-bars, nav .fa-xmark {
         font-size: 16px;
     }
 
-    .nav-bar ul {
-        flex-direction: column; /* Stack the navigation links vertically */
-        gap: 10px;
+    /* Icon adjustments for navigation */
+    nav .fa-bars, nav .fa-xmark {
+        display: block;
+        color: #fff;
+        font-size: 1.5em;
+        cursor: pointer;
     }
 
-    .nav-bar ul li a {
-        font-size: 18px; /* Slightly larger text for medium-sized screens */
-    }
-
+    /* Logo size adjustment */
     .logo {
-        font-size: 1.8em; /* Slightly smaller logo */
+        font-size: 2em;
+    }
+
+    /* Nav menu styling for mobile view */
+    .nav-bar ul {
+        display: flex;
+        flex-direction: column;  /* Stack items vertically */
+        gap: 25px;  /* Add some space between items */
+        padding: 35px;
+    }
+
+    .nav-bar ul li {
+        display: block;  /* Remove inline-block to stack items */
+        text-align: left;  /* Align text to the left */
+    }
+
+    /* Paragraph text adjustment */
+    p {
+        font-size: 30px;
+    }
+
+    /* Navigation bar slide-in effect */
+    .nav-bar {
+        position: absolute;
+        background: #1e73be;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: right 1s ease;  /* Smooth transition for slide-in effect */
     }
 
     main {

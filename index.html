@@ -4,95 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- meta tags to optimise SEO -->
     <meta name="description" content="Solo Hub. A website for people who enjoy solo travelling or first-time solo travellers">
     <meta name="keywords" content="travel, solo trips, trips, holiday, destination, vacation, international, global, countries, worldwide">
     
     <title>Solo Hub</title>
     
-    <!-- Linking to the stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
-   
-     
-    <!-- Linking to favicons -->  <!-- figure out how to get icon to be visible in browser tab -->
+    
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assests/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assests/favicon-16x16.png">
 
     <script src="https://kit.fontawesome.com/db4ee61347.js" crossorigin="anonymous"></script>
 </head>
     
 <body>
-    <!--header section-->
     <section class="header">
         <nav>
-             <!--logo-->
-            <a href="index.html" class="logo">Solo Hub</a> 
+            <a href="index.html" class="logo">Solo Hub</a>
             
-            <div class="nav-bar" id="navBar"> <!-- Changed to id="navBar" -->
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i > <!--close mark icon-->
+            <div class="nav-bar" id="navBar">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                     <!--nav bar-->
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="destinations.html">DESTINATIONS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!--menu icon-->
-        
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
-         <!--text box class -->
+
         <div class="text-box">
-             <!--h1 heading-->
             <h1 class="headline">Your Solo Adventure Awaits...</h1>
-             <!--paragraph-->
-            <p class="p1">Welcome to Solo Hub, your go-to resource for unforgettable solo adventures! Whether you're a seasoned traveler or planning your first trip on your own, we're here to guide you every step of the way. Explore new cultures, discover breathtaking landscapes, and enjoy the freedom of traveling at your own pace. At Solo Hub, we believe solo travel is empowering, and we’re excited to help you make the most of every journey. Dive in, explore our tips, and start planning your next adventure today!</p>
-             <!--discover more button-->
+            <p class="p1">Welcome to Solo Hub, your go-to resource for unforgettable solo adventures!</p>
             <a href="about.html" class="hero-button">discover more</a>
         </div>
     </section>
-   
-    <!-- Social Media Handles -->
 
     <div class="icon-container">
         <ul id="social-networks">
-            <li>
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Facebook page (opens in a new tab)">
-                    <i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our X  page (opens in a new tab)">
-                    <i class="fa-brands fa-square-x-twitter"></i></a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our YouTube page (opens in a new tab)">
-                    <i class="fa-brands fa-youtube-square"></i></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Instagram page (opens in a new tab)">
-                    <i class="fa-brands fa-instagram"></i></a>
-            </li>
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube-square"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
         </ul>
     </div>
-  
-    <!--Javascript for toggle menu-->
-   
-  <!-- <script>
-   var navBar = document.getElementById("navBar");
-   function showMenu() {
-    navBar.style.right = "0";
-   }
-   function hideMenu() {
-    navBar.style.right = "-200px"
-   }
-   </script> -->
-   <script src="assets/js/scripts.js"></script>
-  
+
+    <script>
+        var navBar = document.getElementById("navBar");
+        function showMenu() {
+            navBar.style.right = "0";
+        }
+        function hideMenu() {
+            navBar.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
+
 
