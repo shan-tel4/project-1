@@ -24,7 +24,6 @@
     position: relative;
 }
 
-
 /* Social Media Icons */
 #social-networks {
     list-style-type: none;
@@ -65,7 +64,6 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
-
 }
 
 /* Logo Styling */
@@ -82,7 +80,6 @@ nav {
     gap: 25px;
     list-style: none;
     padding: 0;
-    
 }
 
 .nav-bar ul li {
@@ -92,7 +89,7 @@ nav {
 .nav-bar ul li a {
     color: #fff;
     text-decoration: none;
-    font-size:1em;
+    font-size: 1em;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
     position: relative;
@@ -100,7 +97,7 @@ nav {
 }
 
 .nav-bar ul li a:hover {
-    color: #ffcb74;
+    color: #fff;
 }
 
 .nav-bar ul li a::after {
@@ -168,32 +165,40 @@ nav .fa-bars, nav .fa-xmark {
     cursor: pointer;
 }
 
-/* Media Query for 430px to 1000px */
-
+/* Media Query for devices between 430px and 1000px */
 @media (min-width: 430px) and (max-width: 1000px) {
+
+    /* Adjust the text size for smaller screens */
     .text-box h1 {
-        font-size: 20px;
+        font-size: 1.5em;
     }
+
+    /* Navbar setup for smaller screen sizes */
     .nav-bar ul {
-        display: flex;
         flex-direction: column; /* Stack items vertically */
-        gap: 2px;
+        gap: 10px;
         padding: 30px;
     }
+
     .nav-bar ul li {
-        display: block; /* Remove inline-block to stack items */
-        text-align: left; /* Align text to the left */
+        display: block;
+        text-align: left;
     }
+
+    /* Ensure the navbar is full screen on mobile */
     .nav-bar {
         position: absolute;
         background: #1e73be;
         height: 100vh;
-        width: 200px;
+        width: 250px; /* Slightly wider mobile navbar */
         top: 0;
-        right: -200px;
+        right: -250px; /* Hide initially off-screen */
         text-align: left;
         z-index: 2;
+        transition: 1s ease;
     }
+
+    /* Adjust for mobile menu buttons */
     nav .fa-xmark {
         display: block;
         color: #fff;
@@ -202,52 +207,30 @@ nav .fa-bars, nav .fa-xmark {
         cursor: pointer;
     }
 
-
-      @media (min-width: 430px) and (max-width: 1000px) {
-  p {
-        font-size: 2rem;
-    }
-    .nav-bar ul {
-        display: flex;
-        flex-direction: column; /* Stack items vertically */
-        gap: 10px; /* Add some space between items */
-    }
-    .nav-bar ul li {
-        display: block; /* Remove inline-block to stack items */
-        text-align: left; /* Align text to the left */
-    }
-
-    .headline {
-      font-size: 60px;
-    }
-    .nav-bar {
-        position: absolute;
-        background: #1e73be;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-
-    .text-box .headline {
-        font-size: 1.7rem; 
-    }
-    nav .fa-xmark {
-        display: block;
-        color: #fff;
-        font-size: 1.5em;
-        cursor: pointer;
-    }
     nav .fa-bars {
         display: block;
         color: #fff;
         font-size: 1.5em;
         cursor: pointer;
     }
- 
-}
-}
 
+    /* Adjusting the text for smaller screens */
+    p {
+        font-size: 1.5rem;
+    }
+
+    .headline {
+        font-size: 2rem;
+    }
+
+    .text-box .headline {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust Gallery Layout */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+        gap: 20px;
+    }
+}

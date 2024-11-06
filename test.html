@@ -10,37 +10,34 @@
     <meta name="keywords" content="travel, solo trips, trips, holiday, destination, vacation, international, global, countries, worldwide">
 
     <!-- Linking to the stylesheet -->
-    <!-- <link rel="stylesheet" href="assets/css/about.css"> -->
-    <link rel="stylesheet" href="assets/css/about.css">
-
-    
+    <link rel="stylesheet" href="assets/css/destinations.css">
+   
 
     <!-- Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/db4ee61347.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!--header section-->
-    <section class="header2">
+    <!-- Header Section -->
+    <header>
         <nav>
-             <!--logo-->
-            <a href="index.html" class="logo">Solo Hub</a> 
-            
-            <div class="nav-bar" id="navBar"> <!-- Changed to id="navBar" -->
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i > <!--close mark icon-->
+            <!-- Logo -->
+            <a href="index.html" class="logo">Solo Hub</a>
+
+            <!-- Navigation Bar -->
+            <div class="nav-bar" id="navBar">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> <!-- Close Icon -->
                 <ul>
-                     <!--nav bar-->
+                    <!-- Navigation Links -->
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="destinations.html">DESTINATIONS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!--menu icon-->
-        
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!-- Menu Icon -->
         </nav>
-        
-    </section>
+    </header>
 
     <!-- Main Content -->
     <main>
@@ -92,7 +89,15 @@
     </footer>
 
     <!-- JavaScript for Toggle Menu -->
-    <script src="assets/js/scripts.js"></script>
+    <script>
+        var navBar = document.getElementById("navBar");
+        function showMenu() {
+            navBar.style.right = "0";
+        }
+        function hideMenu() {
+            navBar.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
 
