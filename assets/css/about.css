@@ -283,7 +283,7 @@ nav .fa-solid.fa-xmark {
     }
 
     .gallery {
-        grid-template-columns: repeat(2, 1fr); /* 2 images per row on mobile */
+        grid-template-columns: repeat(1, 1fr); /* 2 images per row on mobile */
     }
 
     .gallery img {
