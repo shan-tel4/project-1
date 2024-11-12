@@ -8,7 +8,7 @@
 <body>
 
 <h1>Solo Hub - Project 1 HTML & CSS</h1>
-<p><strong>Website URL</strong> <a href="https://shan-tel4.github.io/project-1/" target="_blank">tbc</a></p>
+<p><strong>Website URL</strong> <a href="https://shan-tel4.github.io/project-1/" target="_blank">Solo Hub Website</a></p>
 
 <h2>Table of Contents</h2>
 <ol>
