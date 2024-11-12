@@ -204,7 +204,106 @@ nav .fa-solid.fa-xmark {
 }
 
 
+/* Media Query for devices with min-width 430px and max-width 1000px */
+@media (min-width: 430px) and (max-width: 1000px) {
+    
+    /* Header Adjustments */
+    .header2 {
+        padding: 10px 15px;
+    }
 
+    .logo {
+        font-size: 1.5em;
+    }
+
+    /* Navigation Bar */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .nav-bar ul li {
+        text-align: left;
+    }
+
+    .nav-bar ul li a {
+        font-size: 1.1em;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: 250px;
+        background-color: #1e73be;
+        height: 100vh;
+        text-align: left;
+        transition: 0.5s;
+    }
+
+    /* Adjust Mobile Icons */
+    nav .fa-solid.fa-bars,
+    nav .fa-solid.fa-xmark {
+        display: block;
+        color: #fff;
+        font-size: 1.8em;
+        cursor: pointer;
+    }
+
+    /* About Content Adjustments */
+    .about-content {
+        padding: 20px;
+        margin: 120px auto;
+        max-width: 95%;
+    }
+
+    .about-content h1 {
+        font-size: 1.8em;
+    }
+
+    .about-content h2 {
+        font-size: 1.5em;
+    }
+
+    .about-content p {
+        font-size: 1.05em;
+    }
+
+    /* Image Gallery Adjustments */
+    .image-gallery {
+        padding: 40px 5%;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row on mobile */
+    }
+
+    .gallery img {
+        height: 150px;
+    }
+
+    /* Social Media Icons */
+    #social-networks {
+        margin-top: 20px;
+    }
+
+    #social-networks a {
+        font-size: 1.2rem;
+    }
+
+    /* Footer Adjustments */
+    footer {
+        padding: 15px 0;
+        font-size: 0.9rem;
+    }
+}
 
 
 
