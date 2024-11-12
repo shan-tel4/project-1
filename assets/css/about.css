@@ -30,7 +30,7 @@ header {
     width: 100%;
     padding: 15px 20px;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px #1e73be(0, 0, 0, 0.15);
 }
 
 
