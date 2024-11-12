@@ -52,7 +52,6 @@ nav {
 
 .nav-bar {
     display: flex;
-    align-items: center;
 }
 
 .nav-bar ul {
