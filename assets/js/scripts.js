@@ -3,5 +3,5 @@ var navBar = document.getElementById("navBar");
             navBar.style.right = "0";
         }
         function hideMenu() {
-            navBar.style.right = "-200px";
+            navBar.style.right = "-250px";
         }
