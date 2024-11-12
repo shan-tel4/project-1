@@ -98,3 +98,69 @@
         font-size: 0.9rem;
     }
 }
+/* Header */
+header {
+    background: linear-gradient(45deg, #1e73be, #0e0f0c);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 2em;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+}
+
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-bar ul li a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    color: #fff;
+}
+
+
+
+.nav-bar ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ffcb74;
+    display: block;
+    margin: auto;
+    transition: width 0.4s;
+}
+
+.nav-bar ul li a:hover::after {
+    width: 100%;
+}
