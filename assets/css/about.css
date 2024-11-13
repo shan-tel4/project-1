@@ -1,3 +1,4 @@
+
 /* Google font import links */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
@@ -10,7 +11,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -19,7 +19,6 @@ body {
     color: #333;
     background-color: #f9f9f9;
 }
-
 
 /* Header */
 header {
@@ -30,7 +29,7 @@ header {
     width: 100%;
     padding: 15px 20px;
     z-index: 1000;
-    box-shadow: 0 4px 10px #1e73be(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -87,6 +86,7 @@ nav {
 .nav-bar ul li a:hover::after {
     width: 100%;
 }
+
 
 /* Updated About Content */
 .about-content {
@@ -213,7 +213,6 @@ nav .fa-solid.fa-xmark {
 /* Media Query for devices with min-width 430px and max-width 1000px */
 @media (min-width: 430px) and (max-width: 1000px) {
     
-    /* nav Adjustments */
     nav .fa-xmark {
         display: block;
         color: #fff;
@@ -251,7 +250,7 @@ nav .fa-solid.fa-xmark {
         height: 100vh;
         width: 200px;
         top: 0;
-        right: 0px;
+        right: -200px;
         text-align: left;
         z-index: 2;
         transition: 1s;
