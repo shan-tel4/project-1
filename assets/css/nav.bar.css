@@ -98,6 +98,13 @@ main {
 }
 
 
+/* Mobile Menu Icons */
+nav .fa-bars, nav .fa-xmark {
+    display: none;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
 
 /* Media Query for devices with min-width 430px and max-width 1000px */
 @media (min-width: 430px) and (max-width: 1000px) {
