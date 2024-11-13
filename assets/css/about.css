@@ -119,6 +119,10 @@ nav {
     position: relative;
 }
 
+.fa-solid {
+    color: #1e73be;
+}
+
 /* Image Gallery */
 .image-gallery {
     padding: 60px 10%;
