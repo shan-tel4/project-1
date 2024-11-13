@@ -113,15 +113,12 @@ nav {
 }
 .about-list li {
     font-size: 1.1em;
-    color: #444;
+    color: #1e73be;
     margin-bottom: 10px;
     padding-left: 35px;
     position: relative;
 }
-
-.fa-solid {
-    color: #1e73be;
-}
+ 
 
 /* Image Gallery */
 .image-gallery {
