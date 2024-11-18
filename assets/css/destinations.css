@@ -195,72 +195,76 @@ nav .fa-bars, nav .fa-xmark {
     color: #fff;
     cursor: pointer;
 }
+/* Media Query for devices with min-width 320px and max-width 1000px */
+@media (min-width: 320px) and (max-width: 1000px) {
 
-/* Media Query for devices with min-width 430px and max-width 1000px */
-@media (min-width: 430px) and (max-width: 1000px) {
+    /* Destination list layout */
     .destination-list {
         grid-template-columns: repeat(1, 1fr); /* Display 1 item per row */
     }
 
+    /* Header adjustments */
     .destination-header h1 {
-        font-size: 32px;
+        font-size: 2rem; /* Scaled for readability */
     }
 
     .destination-header p {
-        font-size: 16px;
+        font-size: 1rem; /* Maintain consistency with other paragraphs */
     }
-    nav .fa-xmark {
+
+    /* Navigation icons */
+    nav .fa-xmark, nav .fa-bars {
         display: block;
         color: #fff;
-        font-size: 1.5em;
-        cursor: pointer;
-    }
-    nav .fa-bars {
-        display: block;
-        color: #fff;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         cursor: pointer;
     }
 
+    /* Logo adjustment */
     .logo {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
+    /* Nav menu styling */
     .nav-bar ul {
         display: flex;
         flex-direction: column; /* Stack items vertically */
-        gap: 25px; /* Add some space between items */
-        padding: 35px;
+        gap: 1.5rem; /* Add space between items */
+        padding: 2rem;
     }
+
     .nav-bar ul li {
         display: block; /* Remove inline-block to stack items */
         text-align: left; /* Align text to the left */
     }
 
+    /* Headline adjustments */
     .headline {
-      font-size: 60px;
+        font-size: 3rem; /* Adjusted for readability on smaller screens */
     }
+
+    /* Navigation bar slide-in effect */
     .nav-bar {
-        position: absolute;
+        position: fixed; /* Fixed to ensure consistent visibility */
         background: #1e73be;
         height: 100vh;
-        width: 200px;
+        width: 250px; /* Slightly wider for usability */
         top: 0;
-        right: -200px;
+        right: -250px; /* Match the width */
         text-align: left;
-        z-index: 2;
-        transition: 1s;
+        z-index: 100; /* Bring to the front */
+        transition: right 0.4s ease; /* Smooth transition */
     }
 
     /* Paragraph text adjustment */
     p {
-        font-size: 30px;
+        font-size: 1.2rem; /* Standardized size for better readability */
     }
 
-    
-
+    /* Main content padding */
     main {
-        padding: 20px; /* Add padding for better spacing */
+        padding: 1.5rem; /* Adjust padding for consistent spacing */
     }
 }
+
 
