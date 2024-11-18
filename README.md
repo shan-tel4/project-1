@@ -62,7 +62,7 @@
     <li><strong>Browser Compatibility:</strong> The site has been verified on major browsers, including Chrome, Firefox, Safari, and Edge, for consistent performance across platforms.</li>
 
 
-![responsive](https://github.com/shan-tel4/project-1/blob/New/assets/images/Responsive%20.png?raw=true)
+![responsive](https://github.com/shan-tel4/project-1/blob/New/assets/images/responsive%20screens.png?raw=true)
     
   <li><strong>Accessibility:</strong> The Lighthouse tool in Google DevTools was used to confirm that the site meets accessibility standards, making it easy for all users to navigate.</li>
 
