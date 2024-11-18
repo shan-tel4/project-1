@@ -51,9 +51,7 @@
     <li><strong>Features Left to Implement:</strong>
         <ul>
             <li>Additional form functionality for user story submissions, adding a personal touch to the contact community page.</li>
-            <li>A travel tips page to educate solo travelers on how to stay safe.<li>
-        </ul>
-    </li>
+            <li>A travel tips page to educate solo travelers on how to stay safe.</li>
 </ul>
 
 <h2 id="testing">Testing</h2>
