@@ -24,6 +24,9 @@
 <p><strong>Purpose:</strong> Solo Hub is designed as a comprehensive resource for solo travelers, providing destination guides, travel tips, and a welcoming community for those exploring the world independently. The site offers users valuable information for planning and enjoying solo adventures in various global destinations.</p>
 <p><strong>Audience:</strong> The target audience includes digital nomads, female solo travelers, adventure seekers, and first-time solo explorers. The site caters to diverse solo travel needs with safety tips, destination insights, and engaging content tailored to independent travel.</p>
 
+![home](https://github.com/shan-tel4/project-1/blob/New/assets/images/Solo%20Hub%20Home.png?raw=true)
+
+
 <h2 id="design">Design</h2>
 <p><strong>Name:</strong> Solo Hub</p>
 <p><strong>Colour Palette:</strong> The design employs a modern, dark theme with accents of blue (#1e73be) and white backgrounds (#FFFFFF) for readability. Text is dark grey (#333), providing a calm, accessible experience for users across all devices.</p>
