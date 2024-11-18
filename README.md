@@ -50,8 +50,8 @@
     <li><strong>Contact/Community Page:</strong> A simple form for inquiries and community engagement. Solo travelers can connect, share stories, and gain insights.</li>
     <li><strong>Features Left to Implement:</strong>
         <ul>
-            <li>Additional form functionality for user story submissions, adding a personal touch to the community page.</li>
-            <li>A random fact generator on the "Under Construction" page to keep users engaged with interesting travel insights.</li>
+            <li>Additional form functionality for user story submissions, adding a personal touch to the contact community page.</li>
+            <li>A travel tips page to educate solo travelers on how to stay safe.<li>
         </ul>
     </li>
 </ul>
