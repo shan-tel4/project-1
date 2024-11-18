@@ -168,68 +168,88 @@ nav .fa-bars, nav .fa-xmark {
 }
 
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 320px) {
 
-    /* Adjust header section */
+    /* Header adjustments */
     .header {
-        min-height: 100vh; /* Prevent overflow */
-        padding-top: 80px; /* Space for fixed navbar */
+        min-height: 100vh; /* Ensure the header covers the viewport */
+        padding-top: 70px; /* Space for fixed navbar */
         background-size: cover;
-        background-position: center; /* Keep background centered */
+        background-position: center; /* Keep the background centered */
     }
 
-    /* Resize header text */
+    /* Text adjustments in the hero section */
     .text-box h1 {
-        font-size: 1.8em; /* Reduce size for small screens */
-        line-height: 1.2; /* Tighter spacing */
+        font-size: 1.5em; /* Reduce size for small screens */
+        line-height: 1.2; /* Tighter spacing for better readability */
     }
 
     .text-box p {
-        font-size: 0.85em; /* Smaller paragraph text */
-        margin: 10px 0 20px; /* Adjust spacing */
+        font-size: 0.8em; /* Smaller paragraph text */
+        margin: 8px 0 16px; /* Adjust spacing */
     }
 
-    /* Buttons */
+    /* Hero buttons */
     .hero-button {
-        padding: 8px 12px; /* Compact button size */
-        font-size: 0.75em; /* Smaller font */
+        padding: 6px 10px; /* Compact button size */
+        font-size: 0.7em; /* Smaller font for buttons */
     }
 
-    /* Navigation bar */
+    /* Navigation bar adjustments */
     nav {
-        padding: 10px 5%; /* Smaller padding */
+        padding: 8px 4%; /* Smaller padding for navigation */
     }
 
     .nav-bar {
-        width: 70%; /* Use a smaller width for the sidebar */
-        max-width: 250px; /* Cap at 250px */
+        width: 65%; /* Sidebar width */
+        max-width: 200px; /* Cap the width */
         height: 100vh;
-        top: 0;
-        right: -70%; /* Slide out */
-        transition: right 0.5s ease; /* Faster transition */
+        right: -65%; /* Adjust for smaller screens */
+        transition: right 0.5s ease; /* Smooth animation */
     }
 
     .nav-bar ul {
-        flex-direction: column; /* Vertical stack */
-        gap: 20px; /* Adjust spacing */
-        padding: 15px; /* Compact padding */
+        flex-direction: column; /* Stack items vertically */
+        gap: 18px; /* Adjust spacing */
+        padding: 10px; /* Reduce padding */
     }
 
     .nav-bar ul li a {
-        font-size: 0.85em; /* Smaller links */
+        font-size: 0.8em; /* Smaller link text */
     }
 
-    /* Social Media Icons */
+    /* Logo size adjustment */
+    .logo {
+        font-size: 1.3em; /* Smaller logo for compact screens */
+    }
+
+    /* Social media icon adjustments */
     #social-networks a {
-        font-size: 18px; /* Scale down icons */
+        font-size: 16px; /* Reduce icon size */
     }
 
     #social-networks li {
-        margin: 0 8px; /* Closer spacing */
+        margin: 0 6px; /* Tighten spacing between icons */
     }
 
-    /* Adjust logo */
-    .logo {
-        font-size: 1.5em; /* Smaller logo */
+    /* General typography adjustments */
+    body {
+        font-size: 0.85em; /* Scale down the base font size */
+    }
+
+    /* Header and main content adjustments */
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 0.9em; /* Scale headings */
+    }
+
+    p {
+        font-size: 0.8em; /* Smaller paragraph size */
+        line-height: 1.4; /* Ensure readability */
+    }
+
+    /* Reduce unnecessary gaps */
+    section {
+        padding: 10px 15px; /* Compact section padding */
     }
 }
+
