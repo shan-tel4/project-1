@@ -78,6 +78,9 @@
 
 ![html checker](https://github.com/shan-tel4/project-1/blob/New/assets/images/html%20checker.png?raw=true)
 
+
+![css checker](https://github.com/shan-tel4/project-1/blob/New/assets/images/css%20checker.png?raw=true)
+
 <h2>GitHub and Deployment</h2>
 <p>The website was deployed using GitHub Pages, with the repository managed through Visual Studio Code. This setup enables seamless updates and collaboration.</p>
 
