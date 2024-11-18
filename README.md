@@ -69,6 +69,10 @@
  <li><strong>Validator Testing:</strong>
         <ul>
             <li>HTML: Passed the W3C Nu HTML Checker without errors.</li>
+
+               ![html checker](https://github.com/shan-tel4/project-1/blob/New/assets/images/html%20checker.png?raw=true)
+
+            
             <li>CSS: Passed the W3C CSS Validator with no issues.</li>
         </ul>
     </li>
