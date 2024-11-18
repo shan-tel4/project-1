@@ -169,60 +169,65 @@ nav .fa-bars, nav .fa-xmark {
 
 
 /* Responsive adjustments for smaller screens */
-@media only screen and (min-width: 390px) and (max-width: 1000px) {
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
 
     /* Header text adjustment */
     .text-box h1 {
-        font-size: 20px;
+        font-size: 1.2rem; /* Scaled for readability */
     }
 
     /* Icon adjustments for navigation */
     nav .fa-bars, nav .fa-xmark {
         display: block;
         color: #fff;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         cursor: pointer;
     }
 
     /* Logo size adjustment */
     .logo {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     /* Nav menu styling for mobile view */
     .nav-bar ul {
         display: flex;
-        flex-direction: column;  /* Stack items vertically */
-        gap: 25px;  /* Add some space between items */
-        padding: 35px;
+        flex-direction: column; /* Stack items vertically */
+        gap: 1.5rem; /* Add some space between items */
+        padding: 2rem; /* Inner spacing for better layout */
     }
 
     .nav-bar ul li {
-        display: block;  /* Remove inline-block to stack items */
-        text-align: left;  /* Align text to the left */
+        display: block; /* Remove inline-block to stack items */
+        text-align: left; /* Align text to the left */
     }
 
     /* Paragraph text adjustment */
     p {
-        font-size: 30px;
+        font-size: 1.1rem; /* Ensure comfortable reading size */
     }
 
     /* Navigation bar slide-in effect */
     .nav-bar {
-        position: absolute;
+        position: fixed; /* Ensure it stays on top */
         background: #1e73be;
         height: 100vh;
-        width: 200px;
+        width: 250px; /* Slightly wider for better tap area */
         top: 0;
-        right: -200px;
+        right: -250px; /* Match the width */
         text-align: left;
-        z-index: 2;
-        transition: right 1s ease;  /* Smooth transition for slide-in effect */
+        z-index: 100; /* Bring to the front */
+        transition: right 0.4s ease; /* Faster and smoother */
     }
 
     /* Button adjustments for smaller screens */
     .btn {
-        padding: 10px;
+        padding: 0.8rem 1rem; /* Adjust padding for compact size */
         font-size: 0.9rem;
+    }
+
+    /* Add spacing below buttons if used in lists */
+    .btn + .btn {
+        margin-top: 0.5rem;
     }
 }
