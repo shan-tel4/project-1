@@ -195,6 +195,7 @@ nav .fa-bars, nav .fa-xmark {
     color: #fff;
     cursor: pointer;
 }
+
 /* Media Query for devices with min-width 320px and max-width 1000px */
 @media (min-width: 320px) and (max-width: 1000px) {
 
@@ -205,11 +206,11 @@ nav .fa-bars, nav .fa-xmark {
 
     /* Header adjustments */
     .destination-header h1 {
-        font-size: 2rem; /* Scaled for readability */
+        font-size: 1.6rem; /* Scaled for 320px screens */
     }
 
     .destination-header p {
-        font-size: 1rem; /* Maintain consistency with other paragraphs */
+        font-size: 0.9rem; /* Smaller font for readability on small screens */
     }
 
     /* Navigation icons */
@@ -222,15 +223,15 @@ nav .fa-bars, nav .fa-xmark {
 
     /* Logo adjustment */
     .logo {
-        font-size: 2rem;
+        font-size: 1.8rem; /* Smaller logo for small screens */
     }
 
     /* Nav menu styling */
     .nav-bar ul {
         display: flex;
         flex-direction: column; /* Stack items vertically */
-        gap: 1.5rem; /* Add space between items */
-        padding: 2rem;
+        gap: 1rem; /* Reduced gap for small screens */
+        padding: 1.5rem; /* Reduced padding */
     }
 
     .nav-bar ul li {
@@ -240,7 +241,7 @@ nav .fa-bars, nav .fa-xmark {
 
     /* Headline adjustments */
     .headline {
-        font-size: 3rem; /* Adjusted for readability on smaller screens */
+        font-size: 2.5rem; /* Adjusted headline font size */
     }
 
     /* Navigation bar slide-in effect */
@@ -248,9 +249,9 @@ nav .fa-bars, nav .fa-xmark {
         position: fixed; /* Fixed to ensure consistent visibility */
         background: #1e73be;
         height: 100vh;
-        width: 250px; /* Slightly wider for usability */
+        width: 230px; /* Slightly smaller width for 320px screens */
         top: 0;
-        right: -250px; /* Match the width */
+        right: -230px; /* Adjust width to match */
         text-align: left;
         z-index: 100; /* Bring to the front */
         transition: right 0.4s ease; /* Smooth transition */
@@ -258,12 +259,18 @@ nav .fa-bars, nav .fa-xmark {
 
     /* Paragraph text adjustment */
     p {
-        font-size: 1.2rem; /* Standardized size for better readability */
+        font-size: 1rem; /* Reduced font size for readability */
     }
 
     /* Main content padding */
     main {
-        padding: 1.5rem; /* Adjust padding for consistent spacing */
+        padding: 1rem; /* Reduced padding for smaller screens */
+    }
+
+    /* Optional: Make buttons smaller and more compact */
+    .btn {
+        padding: 0.6rem 1rem; /* More compact button */
+        font-size: 0.9rem;
     }
 }
 
