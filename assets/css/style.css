@@ -168,88 +168,61 @@ nav .fa-bars, nav .fa-xmark {
 }
 
 
-@media only screen and (max-width: 320px) {
+/* Responsive adjustments for smaller screens */
+@media only screen and (min-width: 390px) and (max-width: 1000px) {
 
-    /* Header adjustments */
-    .header {
-        min-height: 100vh; /* Ensure the header covers the viewport */
-        padding-top: 70px; /* Space for fixed navbar */
-        background-size: cover;
-        background-position: center; /* Keep the background centered */
-    }
-
-    /* Text adjustments in the hero section */
+    /* Header text adjustment */
     .text-box h1 {
-        font-size: 1.5em; /* Reduce size for small screens */
-        line-height: 1.2; /* Tighter spacing for better readability */
+        font-size: 20px;
     }
 
-    .text-box p {
-        font-size: 0.8em; /* Smaller paragraph text */
-        margin: 8px 0 16px; /* Adjust spacing */
-    }
-
-    /* Hero buttons */
-    .hero-button {
-        padding: 6px 10px; /* Compact button size */
-        font-size: 0.7em; /* Smaller font for buttons */
-    }
-
-    /* Navigation bar adjustments */
-    nav {
-        padding: 8px 4%; /* Smaller padding for navigation */
-    }
-
-    .nav-bar {
-        width: 65%; /* Sidebar width */
-        max-width: 200px; /* Cap the width */
-        height: 100vh;
-        right: -65%; /* Adjust for smaller screens */
-        transition: right 0.5s ease; /* Smooth animation */
-    }
-
-    .nav-bar ul {
-        flex-direction: column; /* Stack items vertically */
-        gap: 18px; /* Adjust spacing */
-        padding: 10px; /* Reduce padding */
-    }
-
-    .nav-bar ul li a {
-        font-size: 0.8em; /* Smaller link text */
+    /* Icon adjustments for navigation */
+    nav .fa-bars, nav .fa-xmark {
+        display: block;
+        color: #fff;
+        font-size: 1.5em;
+        cursor: pointer;
     }
 
     /* Logo size adjustment */
     .logo {
-        font-size: 1.3em; /* Smaller logo for compact screens */
+        font-size: 2em;
     }
 
-    /* Social media icon adjustments */
-    #social-networks a {
-        font-size: 16px; /* Reduce icon size */
+    /* Nav menu styling for mobile view */
+    .nav-bar ul {
+        display: flex;
+        flex-direction: column;  /* Stack items vertically */
+        gap: 25px;  /* Add some space between items */
+        padding: 35px;
     }
 
-    #social-networks li {
-        margin: 0 6px; /* Tighten spacing between icons */
+    .nav-bar ul li {
+        display: block;  /* Remove inline-block to stack items */
+        text-align: left;  /* Align text to the left */
     }
 
-    /* General typography adjustments */
-    body {
-        font-size: 0.85em; /* Scale down the base font size */
-    }
-
-    /* Header and main content adjustments */
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 0.9em; /* Scale headings */
-    }
-
+    /* Paragraph text adjustment */
     p {
-        font-size: 0.8em; /* Smaller paragraph size */
-        line-height: 1.4; /* Ensure readability */
+        font-size: 30px;
     }
 
-    /* Reduce unnecessary gaps */
-    section {
-        padding: 10px 15px; /* Compact section padding */
+    /* Navigation bar slide-in effect */
+    .nav-bar {
+        position: absolute;
+        background: #1e73be;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: right 1s ease;  /* Smooth transition for slide-in effect */
+    }
+
+    /* Button adjustments for smaller screens */
+    .btn {
+        padding: 10px;
+        font-size: 0.9rem;
     }
 }
-
