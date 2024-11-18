@@ -69,15 +69,14 @@
  <li><strong>Validator Testing:</strong>
         <ul>
             <li>HTML: Passed the W3C Nu HTML Checker without errors.</li>
-
-               ![html checker](https://github.com/shan-tel4/project-1/blob/New/assets/images/html%20checker.png?raw=true)
-
-            
-            <li>CSS: Passed the W3C CSS Validator with no issues.</li>
+        <li>CSS: Passed the W3C CSS Validator with no issues.</li>
         </ul>
     </li>
-    <li><strong>Unfixed Bugs:</strong> No unresolved bugs have been identified in the current version.</li>
+    
+<li><strong>Unfixed Bugs:</strong> No unresolved bugs have been identified in the current version.</li>
 </ul>
+
+![html checker](https://github.com/shan-tel4/project-1/blob/New/assets/images/html%20checker.png?raw=true)
 
 <h2>GitHub and Deployment</h2>
 <p>The website was deployed using GitHub Pages, with the repository managed through Visual Studio Code. This setup enables seamless updates and collaboration.</p>
