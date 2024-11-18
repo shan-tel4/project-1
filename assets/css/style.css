@@ -168,62 +168,68 @@ nav .fa-bars, nav .fa-xmark {
 }
 
 
-/* Responsive adjustments for smaller screens */
-@media only screen and (min-width: 390px) and (max-width: 1000px) {
+@media only screen and (max-width: 390px) {
 
-    /* Header text adjustment */
+    /* Adjust header section */
+    .header {
+        min-height: 100vh; /* Prevent overflow */
+        padding-top: 80px; /* Space for fixed navbar */
+        background-size: cover;
+        background-position: center; /* Keep background centered */
+    }
+
+    /* Resize header text */
     .text-box h1 {
-        font-size: 20px;
+        font-size: 1.8em; /* Reduce size for small screens */
+        line-height: 1.2; /* Tighter spacing */
     }
 
-    /* Icon adjustments for navigation */
-    nav .fa-bars, nav .fa-xmark {
-        display: block;
-        color: #fff;
-        font-size: 1.5em;
-        cursor: pointer;
+    .text-box p {
+        font-size: 0.85em; /* Smaller paragraph text */
+        margin: 10px 0 20px; /* Adjust spacing */
     }
 
-    /* Logo size adjustment */
-    .logo {
-        font-size: 2em;
+    /* Buttons */
+    .hero-button {
+        padding: 8px 12px; /* Compact button size */
+        font-size: 0.75em; /* Smaller font */
     }
 
-    /* Nav menu styling for mobile view */
-    .nav-bar ul {
-        display: flex;
-        flex-direction: column;  /* Stack items vertically */
-        gap: 25px;  /* Add some space between items */
-        padding: 35px;
+    /* Navigation bar */
+    nav {
+        padding: 10px 5%; /* Smaller padding */
     }
 
-    .nav-bar ul li {
-        display: block;  /* Remove inline-block to stack items */
-        text-align: left;  /* Align text to the left */
-    }
-
-    /* Paragraph text adjustment */
-    p {
-        font-size: 30px;
-    }
-
-    /* Navigation bar slide-in effect */
     .nav-bar {
-        position: absolute;
-        background: #1e73be;
+        width: 70%; /* Use a smaller width for the sidebar */
+        max-width: 250px; /* Cap at 250px */
         height: 100vh;
-        width: 200px;
         top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: right 1s ease;  /* Smooth transition for slide-in effect */
+        right: -70%; /* Slide out */
+        transition: right 0.5s ease; /* Faster transition */
     }
 
-    /* Button adjustments for smaller screens */
-    .btn {
-        padding: 10px;
-        font-size: 0.9rem;
+    .nav-bar ul {
+        flex-direction: column; /* Vertical stack */
+        gap: 20px; /* Adjust spacing */
+        padding: 15px; /* Compact padding */
+    }
+
+    .nav-bar ul li a {
+        font-size: 0.85em; /* Smaller links */
+    }
+
+    /* Social Media Icons */
+    #social-networks a {
+        font-size: 18px; /* Scale down icons */
+    }
+
+    #social-networks li {
+        margin: 0 8px; /* Closer spacing */
+    }
+
+    /* Adjust logo */
+    .logo {
+        font-size: 1.5em; /* Smaller logo */
     }
 }
-
