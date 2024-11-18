@@ -32,6 +32,8 @@
 <h3>Wireframes</h3>
 <p>Mobile-first wireframes were created to ensure a responsive design with google slide. They showcase the structure and layout for an optimal experience on devices of all sizes.</p>
 
+<img src="assests/images/project 1 design.png">
+
 <h2 id="features">Features</h2>
 <ul>
     <li><strong>Navigation Bar:</strong> A fixed navigation bar provides quick access to all sections of the site. The bar includes a toggle menu for mobile view, enhancing accessibility on smaller devices.</li>
