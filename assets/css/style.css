@@ -11,22 +11,25 @@
     box-sizing: border-box;
 }
 
+/* Header */
 .header {
     min-height: 100vh;
-    height: 100vh; /* Ensures it covers the viewport height */
     width: 100%;
-    z-index: 1000;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
         url("https://www.aig.ie/content/aig/emea/ie/en/our-blog/first-hand-guide-to-solo-travelling/_jcr_content/root/responsivegrid/container/container_copy_copy_/articleimage_copy_1995514872.coreimg.jpeg/1714386874843/solo-traveling-1-1440x720.jpeg");
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
+    background-attachment: fixed;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Social Media Icons */
 #social-networks {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
@@ -39,13 +42,13 @@
 }
 
 #social-networks li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 #social-networks a {
     text-decoration: none;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
@@ -56,19 +59,19 @@
 /* Navigation Bar */
 nav {
     display: flex;
-    padding: 15px 6%;
+    padding: 10px 4%;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
     position: fixed;
     top: 0;
     width: 100%;
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1000;
 }
 
 /* Logo Styling */
 .logo {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #fff;
     font-family: 'Pacifico', cursive;
     text-decoration: none;
@@ -77,33 +80,23 @@ nav {
 /* Navbar Styling */
 .nav-bar ul {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     list-style: none;
-    padding: 0;
-}
-
-.nav-bar ul li {
-    display: inline-block;
 }
 
 .nav-bar ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1em;
-    font-weight: 600;
+    font-size: 0.9em;
     font-family: "Poppins", sans-serif;
     position: relative;
-    transition: color 0.3s;
-}
-
-.nav-bar ul li a:hover {
-    color: #fff;
+    transition: color 0.3s ease;
 }
 
 .nav-bar ul li a::after {
     content: '';
     width: 0;
-    height: 3px;
+    height: 2px;
     background: #ffcb74;
     display: block;
     margin: auto;
@@ -118,32 +111,28 @@ nav {
 .text-box {
     width: 90%;
     color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
+    margin: 0 auto;
 }
 
 .text-box h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: "Poppins", sans-serif;
     font-style: italic;
+    margin-bottom: 10px;
 }
 
 .text-box p {
-    margin: 10px 0 40px;
     font-size: 1em;
-    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
 }
 
 /* Hero Button Styling */
 .hero-button {
-    display: inline-block;
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
-    padding: 12px 14px;
+    padding: 10px 15px;
     font-size: 0.8em;
     background: transparent;
     cursor: pointer;
@@ -153,103 +142,109 @@ nav {
 
 .hero-button:hover {
     background-color: #1e73be;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    transform: translateY(-3px);
-    border: #1e73be;
-    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-color: #1e73be;
 }
 
 /* Mobile Menu Icons */
 nav .fa-bars, nav .fa-xmark {
     display: none;
-    font-size: 25px;
-    color: #fff;
-    cursor: pointer;
 }
 
+/* Media Queries */
 
-@media only screen and (max-width: 320px) {
-
-    /* Header adjustments */
+/* Tablets and Mobile Screens */
+@media only screen and (max-width: 768px) {
     .header {
-        min-height: 100vh; /* Ensure the header covers the viewport */
-        padding-top: 70px; /* Space for fixed navbar */
-        background-size: cover;
-        background-position: center; /* Keep the background centered */
+        padding-top: 70px;
     }
 
-    /* Text adjustments in the hero section */
     .text-box h1 {
-        font-size: 1.5em; /* Reduce size for small screens */
-        line-height: 1.2; /* Tighter spacing for better readability */
+        font-size: 1.8em;
     }
 
     .text-box p {
-        font-size: 0.8em; /* Smaller paragraph text */
-        margin: 8px 0 16px; /* Adjust spacing */
+        font-size: 0.9em;
     }
 
-    /* Hero buttons */
     .hero-button {
-        padding: 6px 10px; /* Compact button size */
-        font-size: 0.7em; /* Smaller font for buttons */
+        padding: 8px 10px;
+        font-size: 0.7em;
     }
 
-    /* Navigation bar adjustments */
     nav {
-        padding: 8px 4%; /* Smaller padding for navigation */
-    }
-
-    .nav-bar {
-        width: 65%; /* Sidebar width */
-        max-width: 200px; /* Cap the width */
-        height: 100vh;
-        right: -65%; /* Adjust for smaller screens */
-        transition: right 0.5s ease; /* Smooth animation */
+        padding: 8px 4%;
     }
 
     .nav-bar ul {
-        flex-direction: column; /* Stack items vertically */
-        gap: 18px; /* Adjust spacing */
-        padding: 10px; /* Reduce padding */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 
     .nav-bar ul li a {
-        font-size: 0.8em; /* Smaller link text */
+        font-size: 0.9em;
     }
 
-    /* Logo size adjustment */
-    .logo {
-        font-size: 1.3em; /* Smaller logo for compact screens */
-    }
-
-    /* Social media icon adjustments */
     #social-networks a {
-        font-size: 16px; /* Reduce icon size */
+        font-size: 16px;
+    }
+}
+
+/* Small Screens (320px width) */
+@media only screen and (max-width: 320px) {
+    .header {
+        background-size: cover;
+    }
+
+    .text-box h1 {
+        font-size: 1.4em;
+    }
+
+    .text-box p {
+        font-size: 0.75em;
+        margin: 8px 0;
+    }
+
+    .hero-button {
+        padding: 6px 8px;
+        font-size: 0.6em;
+    }
+
+    nav {
+        padding: 6px 2%;
+    }
+
+    .nav-bar ul {
+        gap: 8px;
+    }
+
+    .nav-bar ul li a {
+        font-size: 0.7em;
+    }
+
+    .logo {
+        font-size: 1.2em;
+    }
+
+    #social-networks a {
+        font-size: 14px;
     }
 
     #social-networks li {
-        margin: 0 6px; /* Tighten spacing between icons */
+        margin: 0 5px;
+    }
+}
+
+/* Medium and Large Screens */
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+    .text-box h1 {
+        font-size: 2em;
     }
 
-    /* General typography adjustments */
-    body {
-        font-size: 0.85em; /* Scale down the base font size */
-    }
-
-    /* Header and main content adjustments */
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 0.9em; /* Scale headings */
-    }
-
-    p {
-        font-size: 0.8em; /* Smaller paragraph size */
-        line-height: 1.4; /* Ensure readability */
-    }
-
-    /* Reduce unnecessary gaps */
-    section {
-        padding: 10px 15px; /* Compact section padding */
+    .hero-button {
+        padding: 12px 18px;
+        font-size: 0.9em;
     }
 }
 
