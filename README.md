@@ -32,7 +32,7 @@
 <h3>Wireframes</h3>
 <p>Mobile-first wireframes were created to ensure a responsive design with google slide. They showcase the structure and layout for an optimal experience on devices of all sizes.</p>
 
-<img src="assets/images/project-1-design.png" alt="Project 1 Design" />
+<img src="assets/images/Project 1 Design.png" alt="Project 1 Design" />
 
 
 
