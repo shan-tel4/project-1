@@ -58,10 +58,15 @@
 
 <h2 id="testing">Testing</h2>
 <ul>
-    
+
+
 <li><strong>Responsive:</strong> The site has been tested on various devices and screen sizes, ensuring a fully responsive design optimized for both mobile and desktop experiences.</li>
     <li><strong>Browser Compatibility:</strong> The site has been verified on major browsers, including Chrome, Firefox, Safari, and Edge, for consistent performance across platforms.</li>
-    <li><strong>Accessibility:</strong> The Lighthouse tool in Google DevTools was used to confirm that the site meets accessibility standards, making it easy for all users to navigate.</li>
+
+
+![responsive](https://github.com/shan-tel4/project-1/blob/New/assets/images/Responsive%20.png?raw=true)
+    
+  <li><strong>Accessibility:</strong> The Lighthouse tool in Google DevTools was used to confirm that the site meets accessibility standards, making it easy for all users to navigate.</li>
 
 
 ![lighthouse](https://github.com/shan-tel4/project-1/blob/New/assets/images/Screenshot%202024-11-18%20at%2013.56.48.png?raw=true)
