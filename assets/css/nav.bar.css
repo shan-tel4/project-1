@@ -107,7 +107,7 @@ nav .fa-bars, nav .fa-xmark {
 }
 
 /* Media Query for devices with min-width 430px and max-width 1000px */
-@media (min-width: 430px) and (max-width: 1000px) {
+@media (min-width: 420px) and (max-width: 1000px) {
     .destination-list {
         grid-template-columns: repeat(1, 1fr); /* Display 1 item per row */
     }
