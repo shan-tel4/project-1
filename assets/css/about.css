@@ -188,7 +188,7 @@ nav .fa-solid.fa-xmark {
 
 
 /* Media Query for devices with min-width 430px and max-width 1000px */
-@media (min-width: 430px) and (max-width: 1000px) {
+@media (min-width: 320px) and (max-width: 1000px) {
     nav .fa-xmark,
     nav .fa-bars {
         display: block;
